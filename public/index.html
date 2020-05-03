@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SpeedVideo</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/4d9e5a9b93.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+</head>
+<body>
+	<video id="video" loop autoplay>
+		<source src="Loops.mp4">
+	</video>
+	<header id="Menu">
+		<h1>Speed<span>Video</span></h1>
+		<ol></ol><i class="fas fa-crown"></i>
+		<i class="fas fa-user-astronaut"></i>
+	</header>
+	<!-----------------Titre---------------------->
+	<h2>Speed<span>Video</span></h2>
+	<div id="Containeur">
+		<div id="BarInfo">
+			<p2>Importer des <span>Vidéo</span></p2><a href="video.html"><i class="fas fa-plus"></i></a>
+			<input id="search" type="text" name="text" placeholder="Search...">
+			<i id="searchicon" class="fas fa-search"></i>
+			<i class="fas fa-star" id="moon"></i>
+			<i class="fas fa-moon" id="star"></i>
+			<i class="fas fa-volume-mute" id="mute"></i>
+		</div>
+		<ol2>
+			
+		</ol2>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="main.js"></script>
+	<script>
+		$('#moon').click(function(){
+			$('#Containeur').addClass("darkmode");
+			$('h3').addClass("colortext");
+			$('p3').addClass("colortext");
+			$('#moon').toggle();
+			$('#star').toggle();
+		});
+
+		$('#star').click(function(){
+			$('#Containeur').removeClass("darkmode");
+			$('h3').removeClass("colortext");
+			$('p3').removeClass("colortext");
+			$('#moon').toggle();
+			$('#star').toggle();
+		});
+
+		$("#mute").click( function (){
+			$("video").prop('muted', true);
+		});
+
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if($(this).scrollTop() > 740){
+					$('#BarInfo').css("position","fixed");
+					$('#BarInfo').css("margin-top","-48vw");
+				}
+				if($(this).scrollTop() < 740){
+					$('#BarInfo').css("position","");
+					$('#BarInfo').css("margin-top","");
+				}
+			});
+		});
+
+		$('#searchicon').click(function(){
+			var search = document.getElementById('search').value;
+			console.log(search);
+			if (search == h3) {
+				alert('oui');
+			} 
+		});
+
+	</script>
+</body>
+</html>
