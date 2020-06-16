@@ -1,0 +1,70 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(uni.jpg);
+	overflow: hidden;
+	font-family: 'Quicksand', sans-serif;
+}
+
+form{
+	margin-top: 15vw;
+	margin-left: 40vw;
+}
+
+input{
+	background: #262626;
+	border-style: none;
+	color: white;
+	margin-top: 5vw;
+	width: 20vw;
+	height: 1.5vw;
+	font-family: 'Quicksand', sans-serif;
+}
+
+
+textarea{
+	background: #262626;
+	border-style: none;
+	color: white;
+	height: 5vw;
+	margin-top: 5vw;
+	width: 20vw;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 0.9vw;
+}
+
+p{
+	position: absolute;
+	color: white;
+	font-size: 1.5vw;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	font-family: 'Quicksand', sans-serif;
+}
+
+#boxadd{
+	margin-top: -13vw;
+	margin-left: 40vw;
+	position: absolute;
+	background: white;
+	height: 12vw;
+	width: 20vw;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.fa-plus{
+	margin-top: 3vw;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	margin-left: 7.5vw;
+	color: #00c5ff;
+	font-size: 5vw;
+}
+
+#btn{
+	cursor: pointer;
+}
+
+
+span{
+	color: #00c5ff;
+	font-size: 1.2em;
+}
